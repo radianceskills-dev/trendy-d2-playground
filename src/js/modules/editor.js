@@ -483,6 +483,7 @@ export default {
   clearCompileErrors,
   getDiagramSVG,
   getScript,
+  setScript,
   getEditor,
   compile,
 };

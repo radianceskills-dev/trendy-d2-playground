@@ -10,6 +10,7 @@ import Zoom from "./modules/zoom.js";
 import Layout from "./modules/layout.js";
 import Modal from "./modules/modal.js";
 import Sketch from "./modules/sketch.js";
+import TrendyAI from "./modules/trendy_ai.js";
 
 (async () => {
   await init();
@@ -26,6 +27,8 @@ async function init() {
   Theme.init();
 
   await Editor.init();
+
+  TrendyAI.init(Editor);
 
   Export.init();
   Fullscreen.init();
